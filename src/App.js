@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Index from "./pages";
+import About from "./pages/About";
+import Skill from "./pages/Skill";
+import Project from "./pages/Project";
+import Contact from "./pages/Contact";
+import { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { darkTheme, GlobalStyles, lightTheme } from "./utils/Theme";
+import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
+        <GlobalStyles />
+        <Navbar theme={(value) => setTheme(value)} />
+        <Index />
+        <About />
+        <Skill />
+        <Project />
+        <Contact />
+        <Footer />
+        <ScrollToTop />
+      </ThemeProvider>
+    </>
   );
 }
 
