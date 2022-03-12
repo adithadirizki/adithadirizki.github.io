@@ -49,16 +49,16 @@ const Footer = () => {
     <>
       <Container>
         <SocialMedia>
-          <Link href="https://facebook.com/univers.univers.90226">
+          {/* <Link href="https://facebook.com/univers.univers.90226">
             <FontAwesomeIcon icon={faFacebook} title="Facebook" />
-          </Link>
-          <Link href="https://instagram.com/adit_hadirizki">
+          </Link> */}
+          <Link href="https://instagram.com/adit_hadirizki" target="_blank">
             <FontAwesomeIcon icon={faInstagram} title="Instagram" />
           </Link>
-          <Link href="https://github.com/adithadirizki">
+          <Link href="https://github.com/adithadirizki" target="_blank">
             <FontAwesomeIcon icon={faGithub} title="Github" />
           </Link>
-          <Link href="https://wa.me/6287744508761">
+          <Link href="https://wa.me/6287744508761" target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} title="Whatsapp" />
           </Link>
         </SocialMedia>

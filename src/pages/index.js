@@ -120,7 +120,7 @@ const Index = () => {
       <Background>
         <Welcome>
           <Title>Hello, I'm Alfazri Hadi Rizki</Title>
-          <Desc>I'm Fullstack Web Developer</Desc>
+          <Desc>Web Developer</Desc>
           <Bounce>
             <KnowMore onClick={handleClick}>Know more</KnowMore>
             <Arrow>

@@ -30,6 +30,7 @@ const ImageContext = styled.div`
 const Image = styled.img`
   width: 150px;
   height: 150px;
+  object-fit: cover;
   border-radius: 9999px;
   border: 6px solid transparent;
   box-shadow: 0 0 0 4px ${({ theme }) => theme.primary};
@@ -79,7 +80,7 @@ const About = () => {
     <>
       <Container id="about">
         <ImageContext>
-          <Image src="me.png" alt="Profile" />
+          <Image src="me.jpeg" alt="Profile" />
         </ImageContext>
         <div>
           <Title>

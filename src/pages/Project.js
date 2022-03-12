@@ -44,6 +44,7 @@ const Desc = styled.div`
 
 const Ul = styled.ul`
   display: grid;
+  gap: 2rem;
   grid-template-columns: repeat(1, 1fr);
   list-style: none;
   padding: 0;
@@ -61,7 +62,9 @@ const ImageWrapper = styled.div`
   position: relative;
   padding-top: 50.66%;
   border: 1px solid #cfcfcf;
+  border-radius: 1.5rem;
   overflow: hidden;
+  box-shadow: 0 0 15px #dfdfdf;
   &:hover > div {
     visibility: visible;
   }
@@ -262,6 +265,18 @@ const CardTags = styled.ul`
 
 const Project = () => {
   const projects = [
+    {
+      title: "WhatsApp Gateway",
+      desc: "WhatsApp Gateway can be used for notifications, sending messages/media in bulk and on a scheduled basis. It is built using NodeJS (REST API) and ReactJS.",
+      thumb: "wawjs-3.jpeg",
+      img: [
+        "wawjs-1.png",
+        "wawjs-2.jpeg",
+        "wawjs-3.jpeg",
+        "wawjs-4.jpg",
+      ],
+      tags: ["NodeJS", "ExpressJS", "ReactJS", "Redux-Toolkit", "Tailwind CSS", "MySQL"],
+    },
     {
       title: "Sekolah-KU",
       desc: "E-Learning app to facilitate online learning with several features such as Quiz, Assignments, Materials, Announcements and Other. Built using PHP (Codeigniter) and REST API",

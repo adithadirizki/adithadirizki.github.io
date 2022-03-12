@@ -27,11 +27,22 @@ const Nav = styled.div`
   transition: background-color 0.3s ease-in-out;
 `;
 
+const WrapperLogo = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+`;
+
+const Logo = styled.img`
+  border-radius: 50%;
+  margin-right: .75rem;
+`;
+
 const Title = styled.div`
   font-weight: bold;
   font-size: 1.25rem;
   color: white;
-  padding: 0 1rem;
+  cursor: default;
 `;
 
 const ToggleWrapper = styled.div`
@@ -235,7 +246,10 @@ const Navbar = ({ theme }) => {
     <>
       <Header show={showNavbar}>
         <Nav ref={navbarRef}>
-          <Title>ADITRIZKI</Title>
+          <WrapperLogo>
+            <Logo src="logo.png" alt="Logo" />
+            <Title>ADITRIZKI</Title>
+          </WrapperLogo>
           <ToggleWrapper>
             <ToggleTheme>
               <Light onClick={() => theme("light")}>

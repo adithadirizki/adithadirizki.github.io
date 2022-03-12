@@ -66,12 +66,8 @@ const Skill = () => {
         <Desc>Some skills i have for web development</Desc>
         <Ul>
           <Li>
-            HTML & CSS
+            HTML, CSS & JavaScript
             <SubLi>Advanced</SubLi>
-          </Li>
-          <Li>
-            Javascript
-            <SubLi>Intermediate</SubLi>
           </Li>
           <Li>
             Bootstrap
@@ -83,7 +79,7 @@ const Skill = () => {
           </Li>
           <Li>
             Tailwind CSS
-            <SubLi>Beginner</SubLi>
+            <SubLi>Intermediate</SubLi>
           </Li>
           <Li>
             PHP (Codeigniter)
@@ -91,15 +87,15 @@ const Skill = () => {
           </Li>
           <Li>
             NodeJS
-            <SubLi>Beginner</SubLi>
+            <SubLi>Intermediate</SubLi>
           </Li>
           <Li>
             ExpressJS
-            <SubLi>Beginner</SubLi>
+            <SubLi>Intermediate</SubLi>
           </Li>
           <Li>
             ReactJS
-            <SubLi>Beginner</SubLi>
+            <SubLi>Intermediate</SubLi>
           </Li>
           <Li>
             MySQL
